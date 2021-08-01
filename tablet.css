@@ -1,0 +1,22 @@
+/* section {
+  width: 80%;
+  /* max-width: 50rem; */
+  /*min-width: 20rem;
+} */
+
+.left-empty-space {
+  display: flex;
+  flex-direction: column;
+  /* flex: auto; */
+  justify-content: flex-start;
+
+  order: 1;
+  width: 10%;
+  max-width: 20rem;
+  min-width: 12rem;
+}
+
+section {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}

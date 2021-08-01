@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A page where you can learn how to read and write Wingdings!" />
+    <meta name="robots" content="index,follow" />
+    <title>Learn Wingdings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./tablet.css" rel="stylesheet" media="screen and (min-width: 785px)"> 
+  </head>
+  <body>
+    
+<main>
+
+  <p class="left-empty-space"></p>
+
+  <section>
+
+    <span id="test"></span>
+
+    <div class="card-parent">
+      <div class="card-borders card-title">WINGDINGS</div>
+      <div class="container1 card-borders card-text">
+        <label>
+          <p for="characters" id="top_letter">-</p>
+          <p id="top_desc">-</p>
+          <input id="selectedOption" type="text" list="characters" onfocus="clearTextbox(this)">
+          <datalist id="characters">
+            <option value="victory"></option>
+            <option value="perfect"></option>
+          </datalist>
+        </label>
+        <button id="okbutton" class="center-horizontal" onclick="showSolution()">OK</button>
+        <div class="solution">
+          <p id="msg">CORRECT SOLUTION:</p>
+          <p class="wd" id="bottom_letter">-</p>
+          <p id="bottom_desc">-</p>
+          <div class="container1 card-borders category-box">
+
+            <div>
+              <p><u>Category: <span id="category_name">Hands</span></u></p>
+              <div id="category_div" class="container3">
+
+              </div>
+            </div>
+
+          </div>
+          <button id="nextButton" class="center-horizontal" onclick="nextLetter()">NEXT</button>
+        </div>
+        <!-- <p id="test">_</p> -->
+      </div>
+      <p>
+        SCORE: <span id="score">0</span>
+      </p>
+    </div>
+
+
+  </section>
+
+  <aside>
+    
+    <p class="show_option">
+      <label for="option_uppercase">
+        <input type="checkbox" id="option_uppercase" />
+        <span class="option">uppercase</span>
+      </label>
+    </p>
+    
+    <p class="show_option">
+      <label for="option_lowercase">
+        <input type="checkbox" id="option_lowercase" />
+        <span class="option">lowercase</span>
+      </label>
+    </p>
+    
+    <p class="show_option">
+      <label for="option_numbers">
+        <input type="checkbox" id="option_numbers" />
+        <span class="option">numbers</span>
+      </label>
+    </p>
+    
+    <p class="show_option">
+      <label for="option_symbols">
+        <input type="checkbox" id="option_symbols" />
+        <span class="option">symbols</span>
+      </label>
+    </p>
+    
+  </aside>
+
+</main>
+
+
+
+    <script src="./index.js"></script>
+  </body>
+</html>
